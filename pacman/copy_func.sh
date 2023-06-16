@@ -1,7 +1,11 @@
 #!/bin/sh
 
 copy(){
-  rsync --mkpath -aixHAX "$dir$1" "$dest${1:-$2}"
+  d=`dirname "$dest${1:-$2}"`
+  if ! test -d "$d"; then 
+    mkdir -pv "$d"
+  fi 
+  cp -RTfvp "$dir$1" "$dest${1:-$2}"
 }
 
 link(){
