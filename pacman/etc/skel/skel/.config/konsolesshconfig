@@ -1,0 +1,12 @@
+[Global plugin config]
+manageProfile=false
+
+[SSH Config][mpr.makedeb.org]
+hostname=mpr.makedeb.org
+identifier=mpr.makedeb.org
+importedFromSshConfig=true
+port=
+profileName=
+sshkey=~/.ssh/id_rsa
+useSshConfig=true
+username=huakim
