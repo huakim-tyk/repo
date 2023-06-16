@@ -2,7 +2,7 @@
 dir="$(realpath $(dirname $0))/"
 dest="${1}/"
 
-. ./copy_func.sh
+. "${dir}copy_func.sh"
 
-parsefile 'apt.list' 'cldir'
-copy 'etc/apt'
+parsefile "apt.list" 'cldir'
+copy "etc/apt"

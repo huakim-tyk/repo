@@ -1,0 +1,4 @@
+#FTDI permissions granted to users group
+SUBSYSTEM=="usb", ATTR{idProduct}=="6001", ATTR{idVendor}=="0403", MODE="0660", GROUP="users"
+SUBSYSTEM=="usb", ATTRS{idProduct}=="6001", ATTRS{idVendor}=="0403", MODE="0660", GROUP="users"
+SUBSYSTEMS=="usb-serial", MODE="0660", GROUP="users"

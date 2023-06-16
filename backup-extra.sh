@@ -1,28 +1,15 @@
 #!/bin/sh
-dir="$(realpath $(dirname $0))/"
-dest="${1:-${dir}extra_backup}/"
+dir1="$(realpath $(dirname $0))/"
+dir="${dir1}pacman/"
+dest1="${1:-${dir}extra_backup}/"
+dest="${dest1}pacman/"
 
-rm -R "${dest}"
-. ./pacman/copy_func.sh
+rm -R "${dest1}"
+. "${dir}listfiles.sh"
 
-copysh(){
-    copy "$1.sh"
-}
-
-parsefile "pacman/extra.list" copysh
-
+ln -s "$(realpath "${dir1}.git")" "${dest1}.git"
 (
-dest="${dest}pacman/"
-dir="${dir}pacman/"
-
-for i in 'copy' 'script'; do
-    parsefile "$i.list" 'copy'
-done
-)
-
-ln -s "$(realpath "${dir}.git")" "${dest}.git"
-(
-cd "${dest}"
+cd "${dest1}"
 git add --all
 git commit -m update
 git push
