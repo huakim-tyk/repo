@@ -1,7 +1,7 @@
 #!/bin/sh
 dir1="$(realpath $(dirname $0))/"
 dir="${dir1}pacman/"
-dest1="${1:-${dir}extra_backup}/"
+dest1="${1:-${dir1}extra_backup}/"
 dest="${dest1}pacman/"
 
 rm -R "${dest1}"
