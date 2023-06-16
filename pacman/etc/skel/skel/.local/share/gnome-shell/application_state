@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="geany.desktop" score="4" last-seen="1680013471"/>
+    <application id="com.mattjakeman.ExtensionManager.desktop" score="9" last-seen="1680013254"/>
+    <application id="nemo.desktop" score="16" last-seen="1680013471"/>
+    <application id="org.gnome.Terminal.desktop" score="8" last-seen="1680013148"/>
+    <application id="org.gnome.Settings.desktop" score="32" last-seen="1680013421"/>
+    <application id="org.gnome.Terminal.Preferences.desktop" score="6" last-seen="1680012952"/>
+    <application id="org.gnome.tweaks.desktop" score="12" last-seen="1680013299"/>
+  </context>
+</application-state>

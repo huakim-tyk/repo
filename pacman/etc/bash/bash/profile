@@ -1,0 +1,46 @@
+
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/games:/usr/local/games
+export PATH
+alias sudo='sudo '
+alias eclipse='XDG_SESSION_TYPE=x11 WAYLAND_DISPLAY="" eclipse'
+update-repo() {
+    for source in "$@"; do
+        sudo apt-get update -o Dir::Etc::sourcelist="sources.list.d/${source}.list" \
+        -o Dir::Etc::sourceparts="-" -o APT::Get::List-Cleanup="0"    
+    done
+}
+
+show-repo() {
+    cat /etc/apt/sources.list.d/$1.list
+}
+
+get-repo() {
+    echo /etc/apt/sources.list.d/$1.list
+}
+
+move-repo() {
+    mv -fT $(get-repo $1) $(get-repo $2)
+}
+
+copy-repo() {
+    cp -fT $(get-repo $1) $(get-repo $2)
+}
+
+disable-repo() {
+    for source in "$@"; do
+        j=$(get-repo $source)
+        mv -fT $j $j.save
+    done
+}
+
+enable-repo() {
+    for source in "$@"; do
+        j=$(get-repo $source)
+        mv -fT $j.save $j
+    done
+}
+
+
+edit-repo() {
+    editor $(get-repo $1)
+}

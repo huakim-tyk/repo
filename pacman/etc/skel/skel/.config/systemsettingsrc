@@ -1,0 +1,14 @@
+[KFileDialog Settings]
+Recent Files[$e]=riseup-ovpn.ovpn,file:$HOME/Desktop/local/riseup-ovpn.ovpn
+Recent URLs[$e]=file:$HOME/Desktop/local/
+detailViewIconSize=16
+
+[MainWindow]
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAA/wAAAK8AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+eDP-1=eDP-1
+eDP-1 Height 1536x864 eDP-1=700
+eDP-1 Width 1536x864 eDP-1=1020
+eDP-1 XPosition 1920x1080 eDP-1=592
+eDP-1 YPosition 1920x1080 eDP-1=284

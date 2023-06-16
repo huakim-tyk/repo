@@ -1,0 +1,19 @@
+[$Version]
+update_info=delete_cursor_old_default_size.upd:DeleteCursorOldDefaultSize,kcminputrc_fix_botched_5_21_0.upd:kcminputrc_fix_botched_5_21_0_pre,kcminputrc_fix_botched_5_21_0.upd:kcminputrc_fix_botched_5_21_0,kcminputrc_repeat.upd:kcminputrc_migrate_key_repeat
+
+[Keyboard]
+RepeatDelay=220
+RepeatRate=65
+
+[Libinput][1267][91][Elan Touchpad]
+DisableWhileTyping=false
+PointerAcceleration=1.000
+ScrollFactor=4
+TapToClick=true
+
+[Mouse]
+X11LibInputXAccelProfileFlat=true
+cursorTheme=Adwaita
+
+[Tmp]
+update_info=delete_cursor_old_default_size.upd:DeleteCursorOldDefaultSize
