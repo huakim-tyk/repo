@@ -4,7 +4,7 @@
 cd "$(dirname $0)"
 echo $(pwd)
 dir="bootstrap-$1"
-if [ -d "bootstrap" ]; then
+if ! [ -d "bootstrap" ]; then
   debootstrap --variant=minbase testing bootstrap http://deb.debian.org/debian/
 fi
 if ! [ -d "$dir" ]; then
