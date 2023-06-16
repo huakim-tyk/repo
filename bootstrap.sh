@@ -4,6 +4,9 @@
 cd "$(dirname $0)"
 echo $(pwd)
 dir="bootstrap-$1"
+if ! [ -d "bootstrap" ]; then
+  debootstrap --variant=minbase testing bootstrap http://deb.debian.org/debian/
+fi
 if ! [ -d "$dir" ]; then
   cp -RTfvp bootstrap "$dir"
 fi

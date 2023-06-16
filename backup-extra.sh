@@ -1,15 +1,22 @@
 #!/bin/sh
 dir="$(realpath $(dirname $0))/"
-dest="${1:-${dir}extra_backup/}"
-
+dest="${1:-${dir}extra_backup}/"
+rm -R "${dest}"
 . ./pacman/copy_func.sh
-for i in 'bootstrap-mount' 'bootstrap' 'backup-extra' 'pacman/apt'; do
+for i in 'bootstrap-mount' \
+ 'bootstrap' \
+ 'backup-extra' \
+ 'pacman/apt'; do
     copy "$i.sh"
 done
 
-dir="${dir}pacman/"
+bkdest="${dest}"
+bkdir="${dir}"
 dest="${dest}pacman/"
+dir="${dir}pacman/"
 
 for i in 'copy' 'script'; do
     parsefile "$i" 'copy'
 done
+
+ln -s "${bkdir}extra_repo/.git" "${bkdest}.git"
