@@ -23,6 +23,6 @@ parse(){
 }
 
 parsefile(){
-    sed -n '/^[[:space:]]*#/!p' "$dir$1.list" 
-    sed -n '/^[[:space:]]*#/!p' "$dir$1.list" | parse "$2"
+    sed -n '/^[[:space:]]*#/!p' "$dir$1"
+    sed -n '/^[[:space:]]*#/!p' "$dir$1" | parse "$2"
 }

@@ -1,8 +1,8 @@
 #!/bin/sh
 dir="$(realpath $(dirname $0))/"
-dest="${1:-/}"
+dest="${1}/"
 
 . ./copy_func.sh
 
-parsefile copy copy
+parsefile 'copy.list' copy
 
