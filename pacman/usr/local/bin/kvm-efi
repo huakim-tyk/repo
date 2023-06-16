@@ -1,2 +1,0 @@
-#!/bin/sh
-kvm -bios /usr/share/ovmf/OVMF.fd "$@"

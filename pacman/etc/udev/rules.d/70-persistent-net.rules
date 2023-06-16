@@ -1,3 +1,0 @@
-
-# PCI device 0x168c:0x0042 (ath10k_pci)
-SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="f8:28:19:ef:58:25", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="wlan*", NAME="wlan0"
