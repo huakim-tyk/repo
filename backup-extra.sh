@@ -20,7 +20,9 @@ for i in 'copy' 'script'; do
 done
 
 ln -s "${bkdir}extra_repo/.git" "${bkdest}.git"
-cd "${bkdir}extra_repo/"
+(
+cd "${bkdest}"
 git add --all
 git commit -m update
 git push
+)
