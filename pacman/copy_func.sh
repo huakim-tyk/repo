@@ -22,6 +22,10 @@ parse(){
   done
 }
 
+parsevar(){
+    echo "$1" | parse "$2"
+}
+
 parsefile(){
     sed -n '/^[[:space:]]*#/!p' "$dir$1" | parse "$2"
 }
