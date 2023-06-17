@@ -16,11 +16,13 @@ copy.list
 copy.sh
 cpangen.sh
 extra.list
+ftprepo.sh
 genrepo.sh
 listfiles.sh
 mprgen.sh
 paccm.sh
 script.list
 user.sh
+vsftpd.conf
 #aptcp.sh
 #aptbk.sh
