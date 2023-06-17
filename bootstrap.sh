@@ -27,7 +27,6 @@ i dev
 i proc
 i sys
 i extra "${smp}"
-chroot . /bin/bash
 chroot . /bin/dpkg --add-architecture i386
 chroot . /bin/bash /extra/pacman/aptat.sh
 chroot . /bin/perl /extra/pacman/apt-$1.pl
