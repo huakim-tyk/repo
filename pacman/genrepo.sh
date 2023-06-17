@@ -31,11 +31,11 @@ echo "Architectures: ${architectures}" >> "dists/${unstable}/Release"
 echo "Description: Debian qutIM unstable" >> "dists/${unstable}/Release"
 apt-ftparchive release "dists/${unstable}" >> "dists/${unstable}/Release"
 
-update-repo(){
+updaterepo(){
  for source in "$@";
  do
  sudo apt-get update -o Dir::Etc::sourcelist="sources.list.d/${source}.list" -o Dir::Etc::sourceparts="-" -o APT::Get::List-Cleanup="0";
  done
 }
 
-update-repo fijik19
+updaterepo fijik19
