@@ -11,7 +11,7 @@ push @pkgs, "at-spi2-core", "ca-certificates", "dosfstools",
 "initramfs-tools", "isc-dhcp-client", "less", "locales", 
 "nano", "net-tools", "network-manager", "network-manager-openvpn", 
 "pciutils", "psmisc", "rfkill", "ssh", "sshfs", "curlftpfs" ,
-"systemd-resolved", "systemd-sysv", 
+"systemd", "systemd-resolved", "systemd-sysv", 
 "sudo", "usr-is-merged", "whois", "whiptail", "wpasupplicant";
 
 

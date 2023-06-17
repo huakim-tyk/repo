@@ -13,7 +13,7 @@ push @pkgs, "apt-file", "apt-rdepends", "at-spi2-core", "apt-utils",
 "isc-dhcp-client", "less", "locales", "lsof", "nano", "net-tools", 
 "network-manager", "network-manager-openvpn", "ntfs-3g", "pciutils", 
 "psmisc", "refractainstaller-base", "refractasnapshot-base", "rfkill", 
-"software-properties-common", "systemd-resolved", "systemd-sysv", 
+"software-properties-common", "systemd", "systemd-resolved", "systemd-sysv", 
 "sudo", "usr-is-merged", "whois", "whiptail", "wpasupplicant";
 
 
