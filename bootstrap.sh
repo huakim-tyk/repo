@@ -1,7 +1,8 @@
 #!/bin/bash
 #dhclient
 
-cd "$(dirname $0)"
+smp="$(realpath $(dirname $0))"
+cd "${smp}"
 echo $(pwd)
 dir="bootstrap-$1"
 if ! [ -d "bootstrap" ]; then
@@ -13,15 +14,19 @@ fi
 cd "$dir"
 
 i(){
+ d=$2
+ if test -z $d; then
+  d=$1
+ fi
  mkdir $1 -pv
- mount /$1 $1/ --bind
+ mount /$d $1/ --bind
 }
 
 
 i dev
 i proc
 i sys
-i extra
+i extra "${smp}"
 chroot . /bin/dpkg --add-architecture i386
 chroot . /bin/bash /extra/pacman/aptat.sh
 chroot . /bin/perl /extra/pacman/apt-$1.pl

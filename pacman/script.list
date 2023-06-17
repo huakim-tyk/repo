@@ -6,6 +6,7 @@ apt-gui.pl
 apt-gtk.pl
 apt-lxde.sh
 apt-plasma.pl
+apt-server.pl
 apt-xfce.pl
 aptat.sh
 aptdt.sh

@@ -6,14 +6,15 @@ unless(caller){
     our @pkgs;
 }
 
-push @pkgs, "apt-file", "apt-rdepends", "aptitude", "at-spi2-core", 
+push @pkgs, "apt-file", "apt-rdepends", "at-spi2-core", 
 "apt-utils", "dosfstools", "dpkg", "dpkg-repack", "dpkg-dev", "file", 
-"grub-efi-amd64", "grub-pc-bin", "grub-efi-ia32-bin", "inotify-tools", 
-"initramfs-tools", "isc-dhcp-client", "less", "locales", "lsof", "nano", 
-"net-tools", "network-manager", "network-manager-openvpn", "ntfs-3g", 
-"pciutils", "psmisc", "refractainstaller-base", "refractasnapshot-base", 
-"rfkill", "software-properties-common", "systemd-resolved", "systemd-sysv", 
-"sudo", "traceroute", "usr-is-merged", "whois", "whiptail", "wpasupplicant";
+"grub-efi-amd64", "grub-pc-bin", "grub-efi-ia32-bin", "inetutils-ping",
+"inetutils-traceroute", "inotify-tools", "initramfs-tools", 
+"isc-dhcp-client", "less", "locales", "lsof", "nano", "net-tools", 
+"network-manager", "network-manager-openvpn", "ntfs-3g", "pciutils", 
+"psmisc", "refractainstaller-base", "refractasnapshot-base", "rfkill", 
+"software-properties-common", "systemd-resolved", "systemd-sysv", 
+"sudo", "usr-is-merged", "whois", "whiptail", "wpasupplicant";
 
 
 push @pkgs,
