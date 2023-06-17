@@ -1,1 +1,1 @@
-deb [trusted=yes] http://localhost:8001/debian/ fijik19 main
+deb [trusted=yes] file://var/lib/apt/local/repo/ fijik19 main
