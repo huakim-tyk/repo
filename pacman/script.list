@@ -18,13 +18,13 @@ copy.sh
 cpangen.sh
 etc/apt
 extra.list
-ftprepo.sh
+#ftprepo.sh
 genrepo.sh
 listfiles.sh
 mprgen.sh
 paccm.sh
 script.list
 user.sh
-vsftpd.conf
+#vsftpd.conf
 #aptcp.sh
 #aptbk.sh
