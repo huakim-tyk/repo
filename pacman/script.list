@@ -15,7 +15,9 @@ clonerepo.pl
 copy.list
 copy.sh
 cpangen.sh
+extra.list
 genrepo.sh
+listfiles.sh
 mprgen.sh
 paccm.sh
 script.list
