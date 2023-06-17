@@ -1,0 +1,4 @@
+[Elan Touchpad]
+disableWhileTyping=false
+pointerAcceleration=1
+tapToClick=true
