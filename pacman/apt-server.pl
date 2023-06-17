@@ -11,7 +11,7 @@ push @pkgs, "at-spi2-core", "dosfstools", "dpkg", "file",
 "inetutils-traceroute", "initramfs-tools", 
 "isc-dhcp-client", "less", "locales", "nano", "net-tools", 
 "network-manager", "network-manager-openvpn", "pciutils", 
-"psmisc", "rfkill", "ssh", "sshfs", "curlftpfs" 
+"psmisc", "rfkill", "ssh", "sshfs", "curlftpfs" ,
 "systemd-resolved", "systemd-sysv", 
 "sudo", "usr-is-merged", "whois", "whiptail", "wpasupplicant";
 
