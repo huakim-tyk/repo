@@ -1,5 +1,6 @@
-apt-base.pl      
-apt.pl    
+apt.pl
+apt.list
+apt-base.pl
 aptdt.sh   
 copy_func.sh  
 user.sh
@@ -12,12 +13,11 @@ backup.sh
 paccm.sh      
 apt-gtk.pl    
 apt-plasma.pl     
-apt-xfce.pl      
-aptbk.sh  
+apt-xfce.pl     
 copy.list     
 script.list   
-apt-gui.pl        
-apt.list         
-aptcp.sh  
+apt-gui.pl    
 copy.sh    
 sources.list
+#aptcp.sh
+#aptbk.sh
