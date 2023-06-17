@@ -6,18 +6,17 @@ unless(caller){
     our @pkgs;
 }
 
-push @pkgs, "at-spi2-core", "dosfstools", "dpkg", "file", 
-"inetutils-ping",
-"inetutils-traceroute", "initramfs-tools", 
-"isc-dhcp-client", "less", "locales", "nano", "net-tools", 
-"network-manager", "network-manager-openvpn", "pciutils", 
-"psmisc", "rfkill", "ssh", "sshfs", "curlftpfs" ,
+push @pkgs, "at-spi2-core", "ca-certificates", "dosfstools", 
+"dpkg", "file", "inetutils-ping", "inetutils-traceroute", 
+"initramfs-tools", "isc-dhcp-client", "less", "locales", 
+"nano", "net-tools", "network-manager", "network-manager-openvpn", 
+"pciutils", "psmisc", "rfkill", "ssh", "sshfs", "curlftpfs" ,
 "systemd-resolved", "systemd-sysv", 
 "sudo", "usr-is-merged", "whois", "whiptail", "wpasupplicant";
 
 
 push @pkgs,
-"linux-image-liquorix-amd64";
+"linux-image-cloud-amd64";
 
 
 our sub load{
