@@ -6,7 +6,7 @@ dir="${dir1}pacman/"
 (
 cd "${dir1}"
 for i in $listfiles; do
-    git add "$(realpath --relative-to=.. ${i})"
+    git add "$(realpath --relative-to=. pacman/${i})"
 done
 git commit -m update
 git push
