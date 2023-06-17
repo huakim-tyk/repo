@@ -1,0 +1,75 @@
+#Package: *
+#Pin: release a=experimental
+#Pin-Priority: 600
+
+#Package: *
+#Pin: release a=unstable
+#Pin-Priority: 600
+
+Package: usr-is-merged
+Pin: release a=fijik19
+Pin-Priority: 2999
+
+Package: initramfs-tools
+Pin: release a=fijik19
+Pin-Priority: 2999
+
+Package: initramfs-tools-core
+Pin: release a=fijik19
+Pin-Priority: 2999
+
+Package: initramfs-tools-bin
+Pin: release a=fijik19
+Pin-Priority: 2999
+
+Package: libgstreamer-plugins-base1.0-dev:amd64
+Pin: release a=fijik19
+Pin-Priority: 2999
+
+Package: libgstreamer-plugins-base1.0-dev:i386
+Pin: release a=fijik19
+Pin-Priority: 2999
+
+#Package: *
+#Pin: release a=kinetic
+#Pin-Priority: 300
+
+#Package: liblrdf0:i386
+#Pin: release a=fijik19
+#Pin-Priority: 2999
+
+#Package: liblrdf0 
+#Pin: release a=fijik19
+#Pin-Priority: 2999
+
+#Package: samdump2
+#Pin: release a=kali-rolling
+#Pin-Priority: 2600
+
+#Package: desktop-base
+#Pin: release a=kali-rolling
+#Pin-Priority: 2600
+
+#Package: *
+#Pin: release a=kali-rolling
+#Pin-Priority: 2400
+
+Package: *
+Pin: release a=testing
+Pin-Priority: 2500
+
+#Package: dolphin
+#Pin: release a=stable
+#Pin-Priority: 2600
+
+#Package: libdolphinvcs5
+#Pin: release a=stable
+#Pin-Priority: 2600
+
+Package: libstd-rust-dev
+Pin: release experimental
+Pin-Priority: 2600
+
+Package: rustc
+Pin: release experimental
+Pin-Priority: 2600

@@ -1,0 +1,30 @@
+Package: *
+Pin: release a=stable
+Pin-Priority: 1500
+
+Package: dpkg 
+Pin: release 
+
+Package: *
+Pin: release a=focal
+Pin-Priority: 100
+
+Package: *
+Pin: release a=kinetic
+Pin-Priority: 100
+
+Package: *
+Pin: release a=jammy
+Pin-Priority: 100
+
+Package: *
+Pin: release a=bionic
+Pin-Priority: 100
+
+Package: libstd-rust-dev
+Pin: release unstable
+Pin-Priority: 1600
+
+Package: rustc
+Pin: release unstable
+Pin-Priority: 1600

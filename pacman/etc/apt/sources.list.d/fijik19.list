@@ -1,0 +1,1 @@
+deb [trusted=yes] file:///extra/pacman/var/lib/apt/local fijik19 main

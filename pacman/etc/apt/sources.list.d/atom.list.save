@@ -1,0 +1,1 @@
+deb [arch=amd64 signed-by=/etc/apt/keyrings/atom.gpg] https://packagecloud.io/AtomEditor/atom/any/ any main

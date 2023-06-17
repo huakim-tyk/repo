@@ -1,0 +1,31 @@
+APT
+{
+  NeverAutoRemove
+  {
+  };
+  
+  AutoRemove{
+     SuggestsImportant "false";
+     RecommendsImportant "false";
+  };
+
+  VersionedKernelPackages
+  {
+	# kernels
+	"linux-.*";
+	"kfreebsd-.*";
+	"gnumach-.*";
+	# (out-of-tree) modules
+	".*-modules";
+	".*-kernel";
+  };
+
+  Never-MarkAuto-Sections
+  {
+  };
+
+  Move-Autobit-Sections
+  {
+	"oldlibs";
+  };
+};

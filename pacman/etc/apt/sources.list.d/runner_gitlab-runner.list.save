@@ -1,0 +1,2 @@
+deb [trusted=yes] https://packages.gitlab.com/runner/gitlab-runner/debian/ bullseye main
+deb-src [trusted=yes] https://packages.gitlab.com/runner/gitlab-runner/debian/ bullseye main

@@ -16,6 +16,7 @@ clonerepo.pl
 copy.list
 copy.sh
 cpangen.sh
+etc/apt
 extra.list
 ftprepo.sh
 genrepo.sh
