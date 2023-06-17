@@ -8,6 +8,10 @@ copy(){
   cp -RTfvp "$dir$1" "$dest${1:-$2}"
 }
 
+dirmk(){
+ mkdir -pv "$dir$1"
+}
+
 link(){
  f="$dest${1:-$2}"
  rm -Rfv "$f"
