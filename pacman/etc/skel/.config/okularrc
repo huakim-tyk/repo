@@ -1,0 +1,23 @@
+[Desktop Entry]
+FullScreen=false
+
+[MainWindow]
+State=AAAA/wAAAAD9AAAAAAAABIAAAAJxAAAABAAAAAQAAAAIAAAACPwAAAADAAAAAQAAAAEAAAAsAHEAdQBpAGMAawBBAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHICAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAIgBhAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAA==
+ToolBarsMovable=Disabled
+eDP-1=eDP-1
+eDP-1 XPosition 1920x1080 eDP-1=696
+eDP-1 YPosition 1920x1080 eDP-1=334
+
+[Recent Files]
+File1[$e]=$HOME/.config/emaildefaults
+File2[$e]=$HOME/.config/dolphinrc
+File3[$e]=$HOME/Desktop/lenovo1/.profile
+File4[$e]=$HOME/Desktop/lenovo1/.dmrc
+File5[$e]=$HOME/Desktop/control
+File6[$e]=$HOME/Desktop/makedeb/makedeb/build.sh
+Name1[$e]=emaildefaults
+Name2[$e]=dolphinrc
+Name3[$e]=.profile
+Name4[$e]=.dmrc
+Name5[$e]=control
+Name6[$e]=build.sh
