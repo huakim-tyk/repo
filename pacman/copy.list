@@ -13,6 +13,6 @@ etc/sysctl.d
 etc/systemd/resolved.conf.d
 etc/udev
 usr/share/X11/xkb
-usr/lib/refractasnapshot
-usr/lib/refractainstaller
+#usr/lib/refractasnapshot
+#usr/lib/refractainstaller
 usr/local/bin

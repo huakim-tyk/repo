@@ -21,6 +21,7 @@ extra.list
 #ftprepo.sh
 genrepo.sh
 listfiles.sh
+makedeb_gen.sh
 mprgen.sh
 paccm.sh
 script.list
