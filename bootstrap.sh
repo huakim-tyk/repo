@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #dhclient
 
 smp="$(realpath $(dirname $0))"
@@ -6,7 +6,7 @@ cd "${smp}"
 echo $(pwd)
 dir="bootstrap-$1"
 if ! [ -d "bootstrap" ]; then
-  debootstrap --variant=minbase testing bootstrap http://deb.debian.org/debian/
+  debootstrap --variant=minbase trixie bootstrap http://deb.debian.org/debian/
 fi
 if ! [ -d "$dir" ]; then
   cp -RTfvp bootstrap "$dir"
@@ -27,7 +27,7 @@ i dev
 i proc
 i sys
 i extra "${smp}"
-chroot . /bin/bash
+#chroot . /bin/bash
 chroot . /bin/dpkg --add-architecture i386
 chroot . /bin/bash /extra/pacman/aptat.sh
 chroot . /bin/perl /extra/pacman/apt-$1.pl

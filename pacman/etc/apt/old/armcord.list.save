@@ -1,1 +1,0 @@
-deb [arch=amd64 signed-by=/etc/apt/keyrings/armcord.gpg] https://eu.armcord.xyz/apt-repo stable main

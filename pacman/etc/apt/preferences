@@ -6,6 +6,10 @@
 #Pin: release a=unstable
 #Pin-Priority: 600
 
+Package: libdpkg-parse-perl
+Pin: release a=fijik19
+Pin-Priority: 2999
+
 Package: usr-is-merged
 Pin: release a=fijik19
 Pin-Priority: 2999
@@ -53,6 +57,11 @@ Pin-Priority: 2999
 #Package: *
 #Pin: release a=kali-rolling
 #Pin-Priority: 2400
+
+
+Package: *
+Pin: release a=fijik19
+Pin-Priority: 2500
 
 Package: *
 Pin: release a=testing

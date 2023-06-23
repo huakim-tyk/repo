@@ -1,2 +1,0 @@
-deb [trusted=yes arch=amd64] https://liquorix.net/debian bookworm main
-#deb-src [arch=amd64] https://liquorix.net/debian bookworm main

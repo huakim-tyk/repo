@@ -1,4 +1,0 @@
-# Faster mirror
-deb [arch=amd64] https://debpm.kryptons.eu/debpm testing main
-# Upstream repository
-deb [arch=amd64] https://jbb.ghsq.ga/debpm testing main

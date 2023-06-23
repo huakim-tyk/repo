@@ -1,3 +1,0 @@
-deb mirror://mirrors.ubuntu.com/mirrors.txt kinetic main restricted universe multiverse
-deb-src mirror://mirrors.ubuntu.com/mirrors.txt kinetic main restricted universe multiverse
-
