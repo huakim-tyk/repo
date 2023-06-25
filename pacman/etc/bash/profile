@@ -2,7 +2,9 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/games:/usr/local/games
 export PATH
 alias sudo='sudo '
-alias eclipse='XDG_SESSION_TYPE=x11 WAYLAND_DISPLAY="" eclipse'
+shopt -s globstar
+shopt -s expand_aliases
+
 update-repo() {
     for source in "$@"; do
         sudo apt-get update -o Dir::Etc::sourcelist="sources.list.d/${source}.list" \
@@ -10,37 +12,56 @@ update-repo() {
     done
 }
 
-show-repo() {
-    cat /etc/apt/sources.list.d/$1.list
+list-repo(){
+    find /etc/apt/sources.list.d/ -name '*.list' | cut -c25- | rev | cut -c6- | rev
+}
+
+list-save(){
+    find /etc/apt/sources.list.d/ -name '*.list.save' | cut -c25- | rev | cut -c11- | rev
 }
 
 get-repo() {
-    echo /etc/apt/sources.list.d/$1.list
+    echo "/etc/apt/sources.list.d/${1}.list"
+}
+
+
+show-repo() {
+    for source in "$@"; do
+        cat "$(get-repo "${source}")"
+    done
 }
 
 move-repo() {
-    mv -fT $(get-repo $1) $(get-repo $2)
+    while (( ${#@} > 1 )); do
+        mv -fTv "$(get-repo "${1}")" "$(get-repo "${2}")"
+        shift
+        shift
+    done
 }
 
 copy-repo() {
-    cp -fT $(get-repo $1) $(get-repo $2)
+    while (( ${#@} > 1 )); do
+        cp -fTv "$(get-repo "${1}")" "$(get-repo "${2}")"
+        shift
+        shift
+    done
 }
 
 disable-repo() {
     for source in "$@"; do
-        j=$(get-repo $source)
-        mv -fT $j $j.save
+        j="$(get-repo "${source}")"
+        mv -fTv "${j}" "${j}.save"
     done
 }
 
 enable-repo() {
     for source in "$@"; do
-        j=$(get-repo $source)
-        mv -fT $j.save $j
+        j=$(get-repo "${source}")
+        mv -fTv "${j}" "${j}.save"
     done
 }
 
 
 edit-repo() {
-    editor $(get-repo $1)
+    editor "$(get-repo $1)"
 }

@@ -7,9 +7,9 @@ unless(caller){
 }
 
 push @pkgs, "apt-file", "apt-rdepends", "at-spi2-core", "apt-utils", 
-"ca-certificates", "dosfstools", "dpkg", "dpkg-repack", "dpkg-dev", "file", 
-"grub-efi-amd64", "grub-pc-bin", "grub-efi-ia32-bin", "inetutils-ping", 
-"inetutils-traceroute", "inotify-tools", "initramfs-tools", 
+"ca-certificates", "console-setup", "dosfstools", "dpkg", "dpkg-repack", 
+"dpkg-dev", "file", "grub-efi-amd64", "grub-pc-bin", "grub-efi-ia32-bin", 
+"inetutils-ping", "inetutils-traceroute", "inotify-tools", "initramfs-tools", 
 "isc-dhcp-client", "less", "locales", "lsof", "nano", "net-tools", 
 "network-manager", "network-manager-openvpn", "ntfs-3g", "pciutils", 
 "psmisc", "refractainstaller-base", "refractasnapshot-base", "rfkill", 

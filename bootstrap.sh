@@ -8,9 +8,7 @@ dir="bootstrap-$1"
 if ! [ -d "bootstrap" ]; then
   debootstrap --variant=minbase trixie bootstrap http://deb.debian.org/debian/
 fi
-if ! [ -d "$dir" ]; then
-  cp -RTfvp bootstrap "$dir"
-fi
+cp -RTfvpu bootstrap "$dir"
 cd "$dir"
 
 i(){
