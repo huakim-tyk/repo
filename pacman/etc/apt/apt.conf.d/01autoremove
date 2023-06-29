@@ -4,6 +4,9 @@ APT
   {
   };
   
+  Install-Recommends "false";
+  Install-Suggests "false";
+  
   AutoRemove{
      SuggestsImportant "false";
      RecommendsImportant "false";
@@ -11,13 +14,6 @@ APT
 
   VersionedKernelPackages
   {
-	# kernels
-	"linux-.*";
-	"kfreebsd-.*";
-	"gnumach-.*";
-	# (out-of-tree) modules
-	".*-modules";
-	".*-kernel";
   };
 
   Never-MarkAuto-Sections
@@ -26,6 +22,5 @@ APT
 
   Move-Autobit-Sections
   {
-	"oldlibs";
   };
 };
